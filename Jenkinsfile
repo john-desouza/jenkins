@@ -5,6 +5,7 @@ pipeline {
       agent any
       steps {
         echo 'Bees Buzz!'
+        junit '**/surefire-reports/**/*.xml'
       }
     }
 
